@@ -13,7 +13,10 @@ npm install
 npm run dll
 ```
 
-2.产出
+2.生产阶段
 ```
 npm run build
 ```
+
+## 参考
+[掘金文章配套讲解](https://juejin.im/post/5abbc2ca5188257ddb0fae9b)
