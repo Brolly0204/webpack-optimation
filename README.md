@@ -27,7 +27,8 @@ npm run dev
 ```
 
 ## 参考文章
-
+- [webpack中文官网](https://doc.webpack-china.org/guides/)
+- [webpack中文](http://www.css88.com/doc/webpack/guides/)
 - [webpack4.0打包优化策略(一)](https://juejin.im/post/5abbc2ca5188257ddb0fae9b)
 - [webpack4.0打包优化策略(二)](https://juejin.im/post/5ac75717518825557459f12b)
 - [webpack4.0打包优化策略(三)](https://juejin.im/post/5ac76a8f51882555677ecc06)
