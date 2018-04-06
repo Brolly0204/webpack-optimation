@@ -20,6 +20,12 @@ npm run dll
 npm run build
 ```
 
+3.开发阶段
+
+```
+npm run dev
+```
+
 ## 参考文章
 
 - [webpack4.0打包优化策略(一)](https://juejin.im/post/5abbc2ca5188257ddb0fae9b)
