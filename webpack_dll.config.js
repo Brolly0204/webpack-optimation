@@ -7,14 +7,14 @@ module.exports = {
     },
     output: {
         filename: '[name].dll.js',
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'dll'),
         // libraryTarget: 'commonjs',
         library: '_dll_[name]_[hash]' // 全局变量名
     },
     plugins: [
         new webpack.DllPlugin({
             name: '_dll_[name]_[hash]',
-            path: path.join(__dirname, 'dist', '[name].manifest.json') // manifest文件的输出路径
+            path: path.join(__dirname, 'dll', '[name].manifest.json') // manifest文件的输出路径
         })
     ]
 }
