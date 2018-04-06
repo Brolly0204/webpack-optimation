@@ -1,11 +1,16 @@
+const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-    plugins: [
-       new webpack.DefinePlugin({
-           'process.env': {
-               'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-           }
-       })
-    ]
+   devServer: {
+       contentBase: path.join(__dirname, 'dist'),
+       compress: true, // 开启Gzip压缩
+       port: 9000,
+       inline: true,
+       hot: true
+   },
+   plugins: [
+       new webpack.NamedModulesPlugin(),
+       new webpack.HotModuleReplacementPlugin()
+   ]
 };

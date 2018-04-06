@@ -68,9 +68,9 @@ module.exports = {
         extensions: ['.js', '.vue']
     },
     plugins: [
-        // new webpack.DefinePlugin({ // 定义环境变量
-        //     "process.env": JSON.stringify(process.env.NODE_ENV)
-        // }),
+        new webpack.DefinePlugin({ // 定义环境变量
+            "process.env": JSON.stringify(process.env.NODE_ENV)
+        }),
         new HappyPack({
             id: 'babel',
             loaders: ['babel-loader?cacheDirectory'],

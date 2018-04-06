@@ -16,7 +16,7 @@ if (NODE_ENV === 'development') {
     console.log('production', NODE_ENV);
 }
 
-let say = 'hello world!';
+let say = 'hello wenli!';
 
 let output = () => { // 懒加载
     import('./lazy').then(module => {

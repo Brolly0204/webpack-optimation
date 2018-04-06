@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import { hot } from 'react-hot-loader';
 
-export default class Header extends Component {
+class Header extends Component {
     render() {
         return (
             <div className='header'>
                <h3>{this.props.title}</h3>
+               <p>hello world</p>
             </div>
         )
     }
 }
+
+export default hot(module)(Header);
